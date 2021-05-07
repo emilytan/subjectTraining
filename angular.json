@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "subjectTraining"
+    }
+  },
+  "defaultProject": "subjectTraining",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -1,0 +1,12 @@
+<h2 class="title">Flights Details</h2>
+
+<table class="table table-striped">
+  <tr *ngFor="let flight of flightSubject$ | async">
+    <td>{{ flight.id }}</td>
+    <td>Flight from {{ flight.from }} to {{ flight.to }}</td>
+    <td *ngIf="flight.delayed">Delayed</td>
+    <td>{{ flight.date | date: "dd.MM.yyyy HH:mm" }}</td>
+  </tr>
+</table>
+<br />
+<button (click)="clickAction()">Click me to fire the subject</button>
